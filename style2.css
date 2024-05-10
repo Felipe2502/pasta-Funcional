@@ -1,0 +1,169 @@
+:root {
+    --color-primary-1: #e8e5e5;
+    --color-primary-2: #19e8ff;
+    --color-primary-3: #065490;
+    --color-primary-4: rgb(62, 59, 59);
+    --color-primary-5: rgb(193, 186, 186);
+    --color-primary-6: #01133af3;
+    --color-primary-7: #e7e1e7;
+    --color-neutral-0: #fff;
+    --color-neutral-1: #00335a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-neutral-1);
+}
+
+.form-popup {
+    position: fixed;
+    top: 50%;
+    max-width: 550px;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    width: 100%;
+    background: var(--color-primary-3);
+    border: 0px solid var(--color-neutral-0);
+    transform: translate(-50%, -50%);
+    box-shadow: -20px 20px 30px 10px var(--color-primary-6);
+    left: 44%;
+}
+
+.form-details {
+    display: flex;
+    flex-direction: column;
+    height: 590px;
+    max-width: 330px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    background-size: cover;
+    background-position: center;
+    background: var(--color-primary-3);
+    border-radius: 10px 0px 0px 10px;
+}
+
+.pasta {
+    position: relative;
+    top: -97%;
+    left: 40%;
+    font-size: 31pt;
+    color: var(--color-primary-5);
+    width: 110%;
+}
+
+.paragrafo {
+    position: absolute;
+    padding-top: 170px;
+    padding-left: 230px;
+    text-align: justify;
+    font-size: 20pt;
+    font-weight: bold;
+    width: 630px;
+    color: var(--color-primary-7);
+}
+
+.form-content {
+    position: fixed;
+    width: 126%;
+    height: 590px;
+    left: 100%;
+    top: 0%;
+    background-image: linear-gradient(145deg, rgb(3, 64, 117), rgb(156, 124, 124));
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    box-shadow: 20px 20px 30px 10px var(--color-primary-6);
+}
+
+.login {
+    text-align: center;
+    font-size: 38pt;
+    line-height: 4.7;
+    letter-spacing: 10px;
+}
+
+form .input-field {
+    margin-top: 40px;
+    width: 70%;
+    height: 57px;
+    margin-left: 15%;
+}
+
+.labelusuario {
+    position: absolute;
+    font-size: 16pt;
+    text-indent: -449px;
+    top: 39%;
+    line-height: 1.4;
+}
+
+.labelsenha {
+    position: absolute;
+    font-size: 16pt;
+    text-indent: 2px;
+    top: 56%;
+}
+
+.btnolho {
+    position: relative;
+    cursor: pointer;
+    width: 7%;
+    left: 84%;
+    top: -180%;
+}
+
+form .input-field input {
+    position: relative;
+    top: -107%;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 15px;
+    align-items: right;
+    font-size: 1.3rem;
+    font-weight: 400;
+    border: 1px solid var(--color-neutral-1);
+    border-radius: 36px;
+    background: var(--color-primary-1);
+}
+
+.butaoentrar {
+    width: 49%;
+    height: 67px;
+    border-radius: 32px;
+    background: var(--color-neutral-1);
+    color: var(--color-neutral-0);
+    border-color: var(--color-primary-3);
+    cursor: pointer;
+    font-size: 19pt;
+    margin-left: 170px;
+    letter-spacing: 2px;
+    margin-top: -17px;
+}
+
+.btn {
+    width: 10%;
+    cursor: pointer;
+}
+
+.emsurblogo {
+    position: relative;
+    top: -23%;
+    width: 277%;
+    margin-left: 230px;
+}
+
+@media (max-width: 720px) {
+    .form-popup {
+        width: 96%;
+    }
+}

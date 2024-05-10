@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <script src="jquery-3.7.1.min.js"></script>
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="form-popup">
+        <div class="form-details">
+            <img src="emsurblogo.png" class="emsurblogo">
+            <h2 class="pasta">Pasta Funcional</h2>
+            <p class="paragrafo">
+                Organização eficiente de documentos para acesso e uso práticos.
+            </p>
+        </div>
+        <div class="form-content">
+            <h3 class="login">LOGIN</h3>
+            <form action="#">
+                <div class="input-field">
+                    <input type="text" required>
+                    <label class="labelusuario">Usuário</label>
+                </div>
+                <div class="input-field">
+                    <input class="inputsenha" required>
+                    <img src="https://icon-library.com/images/icon-eyes/icon-eyes-12.jpg" class="btnolho">
+                    <label class="labelsenha">Senha</label>
+                </div>
+                <button type="submit" class="butaoentrar">Entrar</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+<script>
+    const senha = document.querySelector('.inputsenha');
+    const btnolho = document.querySelector('.btnolho');
+
+    btnolho.onclick = () => {
+        if (senha.type === 'password') {
+            senha.type = 'text'
+            btnolho.src = 'ocultar.png'
+        }
+        else {
+            senha.type = 'password'
+            btnolho.src = 'https://icon-library.com/images/icon-eyes/icon-eyes-12.jpg'
+        }
+    }
+</script>
+
+
+</html>
